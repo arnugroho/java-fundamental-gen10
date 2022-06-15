@@ -29,8 +29,8 @@ public class CharacterSplit {
 
         // jumlah kata
         String[] arrKata = s.split(" ");
-        for (int i = 0; i < arrKata.length; i++){
-            if(arrKata[i].equalsIgnoreCase("") || arrKata[i].equalsIgnoreCase(" ")){
+        for (String value : arrKata) {
+            if (value.equalsIgnoreCase("") || value.equalsIgnoreCase(" ")) {
 
             } else {
                 jumlahKata++;

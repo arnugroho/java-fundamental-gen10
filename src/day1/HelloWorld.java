@@ -2,8 +2,6 @@ package day1;
 
 import day3.MethodFunction;
 
-import java.util.Scanner;
-
 public class HelloWorld {
 
 
@@ -17,6 +15,5 @@ public class HelloWorld {
         MethodFunction f = new MethodFunction();
         f.cetakHello();
 
-        Scanner s = new Scanner(System.in);
     }
 }
