@@ -1,6 +1,7 @@
 package day1;
 
 import day3.MethodFunction;
+import day3.Segitiga;
 
 public class HelloWorld {
 
@@ -14,6 +15,9 @@ public class HelloWorld {
 
         MethodFunction f = new MethodFunction();
         f.cetakHello();
+
+        Segitiga s3 = new Segitiga();
+        s3.hitungLuas();
 
     }
 }
