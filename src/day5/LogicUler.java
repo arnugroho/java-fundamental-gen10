@@ -17,13 +17,40 @@ public class LogicUler {
             for (int j = 0; j < n; j++) {
                 if (i % 2 == 0) {
                     System.out.printf("%3s", "*");
-                } else if (i % 4 == 1 && j == n -1) {
-                    System.out.printf("%3s","*");
+                } else if (i % 4 == 1 && j == n - 1) {
+                    System.out.printf("%3s", "*");
                 } else if (i % 4 == 3 && j == 0) {
-                    System.out.printf("%3s","*");
+                    System.out.printf("%3s", "*");
                 } else {
-                    System.out.printf("%3s"," ");
+                    System.out.printf("%3s", " ");
                 }
+            }
+            System.out.println();
+        }
+    }
+
+    public void cetakKerangkaAngka() {
+        int n = getN();
+        int c = 0;
+        for (int i = 0; i < n; i++) {
+            if (i % 4 == 2) {
+                c = c + n;
+            }
+            for (int j = 0; j < n; j++) {
+                if (i % 4 == 0) {
+                    System.out.printf("%3d", ++c);
+                } else if (i % 4 == 1 && j == n - 1) {
+                    System.out.printf("%3d", ++c);
+                } else if (i % 4 == 2) {
+                    System.out.printf("%3d", c--);
+                } else if (i % 4 == 3 && j == 0) {
+                    System.out.printf("%3d", ++c);
+                } else {
+                    System.out.printf("%3s", " ");
+                }
+            }
+            if (i % 4 == 2) {
+                c = c + n;
             }
             System.out.println();
         }
@@ -31,6 +58,6 @@ public class LogicUler {
 
     public static void main(String[] args) {
         LogicUler l = new LogicUler();
-        l.cetakKerangka();
+        l.cetakKerangkaAngka();
     }
 }
