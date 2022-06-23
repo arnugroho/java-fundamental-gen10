@@ -1,17 +1,17 @@
 package day8.implementlat;
 
-public class Bird implements Animal {
+public class Fish implements Animal{
     @Override
     public void isFly() {
-        System.out.println("yes, bird can fly");
+        System.out.println("Fish Can't Fly");
     }
 
     @Override
     public int countLegs() {
-        return 2;
+        return 0;
     }
 
-    public void howToFly() {
+    public void howToSwim(){
 
     }
 }
